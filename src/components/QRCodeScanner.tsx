@@ -3,6 +3,7 @@ import QrScanner from 'qr-scanner';
 import { Button } from './ui/button';
 
 const passphrase = 'I LOVE YOU';
+const message = '💝 ⪽⊏ ☐ᐱ☐⟔ᑅ ⊔⟔☐⟇ ᐳ⊓ᒥᐯ ⟇ᒥ🝕ᐯ ⪾ᑅ ᐱ⪽ᐳ☐ ᐯ⟇☐☐ᐳ ⪽⟔ᒪ⊓ᒧ⟔⊐ ⊓ᒥ⊐☐ᐯ ᒥ🝕ᐯᒥ⊐☐ ᐳ⊓☐ 🝕⪽ᐳ☐ 💝';
 
 export default function QRCodeScanner() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -99,7 +100,7 @@ export default function QRCodeScanner() {
         <div
           className={`p-4 rounded-lg w-full bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100`}
         >
-            <p className="font-bold">💝 ME 💝</p>
+            <p className="font-bold">{message}</p>
         </div>
       )}
 
